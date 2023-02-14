@@ -1,17 +1,87 @@
 <!DOCTYPE html>
 <html>
+  <meta charset="utf-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&subset=portuguese&display=swap"
+    rel="stylesheet"
+  />
   <style>
     body {
-      background: url("https://previews.123rf.com/images/subinpumsom/subinpumsom1410/subinpumsom141000212/33015891-beautiful-flowers-background-for-wedding-scene.jpg");
+      background: url("https://4kwallpapers.com/images/walls/thumbs_3t/3534.jpg")
+        fixed center;
+      font-family: "Cedarville Cursive", cursive;
     }
 
-    h1 {
-      color: maroon;
-      margin-left: 40px;
+    .main-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .message {
+      text-align: center;
+      height: 700px;
+      width: 900px;
+      background-color: rgba(255, 255, 255, 0.9);
+      color: palevioletred;
+      box-sizing: content-box;
+      padding: 40px 40px;
+    }
+
+    .sub-message {
+      font-family: "Tangerine", cursive;
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      white-space: nowrap; /* Keeps the content on a single line */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      letter-spacing: 0.15em; /* Adjust as needed */
+      animation: typing 2.5s steps(40, end);
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      from,
+      to {
+        border-color: transparent;
+      }
+      50% {
+        border-color: orange;
+      }
     }
   </style>
   <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages. Zuin</p>
+    <div class="main-div">
+      <div class="message">
+        <h1>💌 Saint-Valetin 💌</h1>
+        <h2 class="sub-message">
+          Helena, vous êtes invitée à un dîner peu orthodoxe de la
+          Saint-Valentin.
+        </h2>
+        <h3>Avec le chef 👨‍🍳 le plus renommé de la route de Camões</h3>
+        <h1>🌶️ Menu 🌶️</h1>
+        <h2>Plat principal du chef</h2>
+        <h4 class="sub-message">
+          délicatesse transatlantique avec une variété de 3 saveurs
+        </h4>
+        <h2>Plat d'accompagnement</h2>
+        <h4 class="sub-message">
+          Si le plat principal est Juliette, alors ce plat est votre Roméo.
+        </h4>
+        <h2>Rua De camões 739, 3 DRT, 19:30</h2>
+        <h2>💖💖💖💝💝💝</h2>
+      </div>
+    </div>
   </body>
 </html>
